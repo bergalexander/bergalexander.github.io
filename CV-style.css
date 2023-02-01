@@ -73,7 +73,9 @@ grid-area: b;
         "b";
     }
 }
-#brad{grid-area: a;}
+#brad{
+grid-area: a;
+width: auto;}
 .biography{grid-area: b;}
 
 
