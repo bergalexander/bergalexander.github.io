@@ -9,11 +9,7 @@ html{
     
 }
 
-@media (max-width: 800px){
-    html{
-        background-color: burlywood;
-    }
-}
+
 
 /* Margin*/
 h1, h2,ul{
@@ -61,16 +57,20 @@ grid-area: b;
  display: grid;
  grid-template:
  "a b" /.5fr 1fr ;
- gap:1rem;
+ gap: 1rem;
  margin-bottom: 30px;
  border-bottom: 1px solid black;
 }
+
 @media (max-width: 800px){
     main{
         display: grid;
         grid-template: 
         "a"
         "b";
+    }
+    html{
+        background-color: burlywood;
     }
 }
 #brad{
@@ -80,6 +80,10 @@ width: auto;}
 
 
 /*list*/
+ul{
+    list-style: square;
+}
+
 .list{
     grid-area: c;
     display: grid;
@@ -87,6 +91,7 @@ width: auto;}
     "a b"/ 1fr 1fr;
      margin-bottom: 30px;
     border-bottom: 1px solid black;
+   
     
 }
 @media (max-width: 800px){
@@ -103,8 +108,9 @@ width: auto;}
 .nominee{
     color: gray;
 }
-.movies{
+.movies li{
     grid-area: a;
+    font-style: italic;
     
 }
 
