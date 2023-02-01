@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color:brown;
+    
+}
+
+@media (max-width: 800px){
+    html{
+        background-color: burlywood;
+    }
+}
+
+/* Margin*/
+h1, h2,ul{
+    margin-bottom: 20px;
+}
+main p {
+    margin-bottom: 15px;
+}
+
+/*Font*/
+
+p,li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+/*Header*/
+header{
+    grid-area: a;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+/* Body*/
+body{
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2rem;
+    background-color:burlywood;
+    display: grid;
+    grid-template: 
+    "a"
+    "b"
+    "c"
+    "d"/ 1fr;
+}
+
+
+
+/*main*/
+main{
+grid-area: b;
+ display: grid;
+ grid-template:
+ "a b" /.5fr 1fr ;
+ gap:1rem;
+ margin-bottom: 30px;
+ border-bottom: 1px solid black;
+}
+@media (max-width: 800px){
+    main{
+        display: grid;
+        grid-template: 
+        "a"
+        "b";
+    }
+}
+#brad{grid-area: a;}
+.biography{grid-area: b;}
+
+
+/*list*/
+.list{
+    grid-area: c;
+    display: grid;
+    grid-template: 
+    "a b"/ 1fr 1fr;
+     margin-bottom: 30px;
+    border-bottom: 1px solid black;
+    
+}
+@media (max-width: 800px){
+    .list{
+        display: grid;
+        grid-template: 
+        "a"
+        "b";
+    }
+}
+.winner{
+    color:gold;
+}
+.nominee{
+    color: gray;
+}
+.movies{
+    grid-area: a;
+    
+}
+
+/*footer*/
+footer{
+    grid-area: d;
+    text-align: center;
+}
+footer p{
+    font-size: 13px;
+}
