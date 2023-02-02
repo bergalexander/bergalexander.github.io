@@ -75,7 +75,9 @@ grid-area: b;
 }
 #brad{
 grid-area: a;
-width: auto;}
+width: 100%;
+max-width: 300px;
+}
 .biography{grid-area: b;}
 
 
