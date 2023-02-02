@@ -4,123 +4,133 @@
     padding: 0;
 }
 
-html{
-    background-color:brown;
-    
+html {
+    background-color: brown;
+
 }
-
-
 
 /* Margin*/
-h1, h2,ul{
+h1,
+h2,
+ul {
     margin-bottom: 20px;
 }
+
 main p {
     margin-bottom: 15px;
 }
 
 /*Font*/
 
-p,li{
+p,
+li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
 }
 
 /*Header*/
-header{
+header {
     grid-area: a;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 25px;
     border-bottom: 1px solid black;
 }
+
 /* Body*/
-body{
+body {
     max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
-    padding:2rem;
-    background-color:burlywood;
+    padding: 2rem;
+    background-color: burlywood;
     display: grid;
-    grid-template: 
-    "a"
-    "b"
-    "c"
-    "d"/ 1fr;
+    grid-template:
+        "a"
+        "b"
+        "c"
+        "d" / 1fr;
 }
-
-
 
 /*main*/
-main{
-grid-area: b;
- display: grid;
- grid-template:
- "a b" /.5fr 1fr ;
- gap: 1rem;
- margin-bottom: 30px;
- border-bottom: 1px solid black;
+main {
+    grid-area: b;
+    display: grid;
+    grid-template:
+        "a b" /.5fr 1fr;
+    gap: 1rem;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
 }
 
-@media (max-width: 800px){
-    main{
+@media (max-width: 800px) {
+    main {
         display: grid;
-        grid-template: 
-        "a"
-        "b";
+        grid-template:
+            "a"
+            "b";
     }
-    html{
+
+    html {
         background-color: burlywood;
     }
 }
-#brad{
-grid-area: a;
-width: 100%;
-max-width: 300px;
-}
-.biography{grid-area: b;}
 
+#brad {
+    grid-area: a;
+    width: 100%;
+    max-width: 300px;
+}
+
+.biography {
+    grid-area: b;
+}
 
 /*list*/
-ul{
+ul {
     list-style: square;
 }
 
-.list{
+.list {
     grid-area: c;
     display: grid;
-    grid-template: 
-    "a b"/ 1fr 1fr;
-     margin-bottom: 30px;
+    grid-template:
+        "a b" / 1fr 1fr;
+    margin-bottom: 30px;
     border-bottom: 1px solid black;
-   
-    
+
+
 }
-@media (max-width: 800px){
-    .list{
+
+@media (max-width: 800px) {
+    .list {
         display: grid;
-        grid-template: 
-        "a"
-        "b";
+        grid-template:
+            "a"
+            "b";
     }
 }
-.winner{
-    color:gold;
+
+.winner {
+    color: gold;
 }
-.nominee{
+
+.nominee {
     color: gray;
 }
-.movies li{
+
+.movies li {
     grid-area: a;
     font-style: italic;
-    
+
 }
 
 /*footer*/
-footer{
+footer {
     grid-area: d;
     text-align: center;
 }
-footer p{
+
+footer p {
     font-size: 13px;
 }
