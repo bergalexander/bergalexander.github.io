@@ -98,8 +98,6 @@ ul {
         "a b" / 1fr 1fr;
     margin-bottom: 30px;
     border-bottom: 1px solid black;
-
-
 }
 
 @media (max-width: 800px) {
